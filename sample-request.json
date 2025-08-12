@@ -1,0 +1,40 @@
+{
+  "personList": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "roles": ["Developer"]
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "roles": ["Speaker"]
+    }
+  ],
+  "assignmentList": [
+    {
+      "event": {
+        "id": 1,
+        "name": "Event A",
+        "start": "2025-08-11T09:00:00",
+        "end": "2025-08-11T11:00:00",
+        "requiredRole": "Speaker"
+      }
+    },
+    {
+      "event": {
+        "id": 2,
+        "name": "Event B",
+        "start": "2025-08-11T10:30:00",
+        "end": "2025-08-11T12:00:00",
+        "requiredRole": "Speaker"
+      }
+    }
+  ],
+  "constraintSettings": {
+    "roleMatchWeight": { "scoreString": "-1hard" },
+    "noOverlapWeight": { "scoreString": "-1hard" },
+    "noBackToBackWeight": { "scoreString": "-10hard" },
+    "balanceWeight": { "scoreString": "-1soft" }
+  }
+}
